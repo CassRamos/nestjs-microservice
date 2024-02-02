@@ -39,6 +39,10 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "xpto",
-    "password": "4234"
+    "username": "chris",
+    "password": "chris"
 }
+
+### auth with token
+GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiY2hyaXMiLCJpYXQiOjE3MDY5MDY5MzksImV4cCI6MTcwNjkwNjk5OX0.CAQY1QeZ62SjUXcesghcvrXnWXh4JIsggF7cz2F_3fk
