@@ -2,7 +2,7 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "product 2",
+    "name": "product 1",
     "description": "basic desc",
     "image_url": "https://via.placeholder.com/150",
     "price": 100
@@ -19,19 +19,20 @@ GET http://localhost:3000/products/b14d6912-a1bc-4cd7-a5e5-3b00cd1da7d1
 ###
 POST http://localhost:3000/orders
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiY2hyaXMiLCJpYXQiOjE3MDY5MTEzOTgsImV4cCI6MTcwNjkxMTQ1OH0.YCh--G1xSZ0gwFslthq7WLQ1nXVO2gEIuCAmjA-fAyU
 
 {
     "items":[
         {
-            "product_id": "07f452b0-954d-4086-80e7-e208adc5ea72",
-            "quantity": ""
+            "product_id": "9cdd13ad-a273-43c4-a1fb-fb6b43e33bf7",
+            "quantity": 2
         },
         {
-            "product_id": "fde79bca-3151-4a29-8eab-00fd1759e851",
+            "product_id": "cbea1061-05f6-4c85-9cd6-4cab6f5eaa6d",
             "quantity": 3
         }
     ],
-    "card-hash": "123"  
+    "card_hash": "123"  
 }
 
 ###
